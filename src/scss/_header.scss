@@ -1,0 +1,110 @@
+header {
+ width: 100%;
+ position: relative;
+ min-height: 816px;
+ a {
+  cursor: pointer;
+ }
+}
+nav {
+ width: 100%;
+ height: 116px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ background-color: white;
+ .logo {
+  font-family: $font--homemadeApple;
+  font-size: 18px;
+  color: #231F20;
+  margin-left: 80px;
+ }
+ ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ }
+ li{
+  font-family: $font--gelasio;
+  font-size: 18px;
+  color: black;
+  margin: 0 15.5px;
+ }
+ .navButton {
+  width: 150px;
+  height: 43.5px;
+  border: 1px solid #F7941E;
+  border-radius: 5px;
+  font-family: $font--gelasio;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #F7941E;
+  cursor: pointer;
+  margin-right: 40px;
+ }
+}
+.header--content {
+ width: 100%;
+ min-height: 700px;
+ background-color: #F1F1F2;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ .header--content-text {
+  height: 700px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .text--article {
+   max-width: 433px;
+   width: 100%;
+   min-height: 411px;
+   h3 {
+    font-family: $font--gelasio;
+    font-size: 56px;
+    line-height: 71px;
+    color: #000000;
+    padding: 5px;
+   }
+   p {
+    font-family: $font--gelasio;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 28px;
+    margin-bottom: 52px;
+    padding: 5px;
+   }
+   .header--button {
+    width: 200px;
+    height: 60px;
+    background: #F7941E;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    font-family: $font--gelasio;
+    margin: 0 5px;
+   }
+   }
+  }
+ }
+ .header--content-img {
+  height: 700px;
+  width: 50%;
+  background: url("../img/headerBackground.png") no-repeat center;
+  background-size: cover;
+}
+@media screen and (max-width:850px) {
+ .header--content {
+  flex-direction: column;
+  .header--content-text {
+   width: 100%;
+  }
+  .header--content-img {
+   width: 100%;
+  }
+ }
+}
